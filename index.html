@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<!--
+	Striped by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ray Tracer Gallery</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="content">
+			<div class="inner">
+				<article class="box post post-excerpt">
+					<header>
+						<h2>Ray Tracer Gallery</h2>
+						<p>Results from the CS 488 (Computer Graphics) final project</p>
+					</header>
+
+					<a href="images/final-scene.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 2 / 1" src="images/final-scene.png" alt="" /></a>
+					<p>Click to view full image</p>
+
+					<p>My final project for my computer graphics course was a ray tracer. The image above was my final scene which demonstrates many of the features that my ray tracer has.</p>
+
+					<ol>
+						<li><a href="#primitives">Cone and Cylinder Primitives</a></li>
+						<li><a href="#reflection">Reflection</a></li>
+						<li><a href="#refraction">Refraction</a></li>
+						<li><a href="#antialiasing">Anti-aliasing</a></li>
+						<li><a href="#pathtracing">Path Tracing (Non-uniform Sampling)</a></li>
+						<li><a href="#glossy">Glossy Reflection</a></li>
+						<li><a href="#softshadows">Soft Shadows</a></li>
+						<li><a href="#dof">Depth of Field</a></li>
+						<li><a href="#bump">Bump Mapping</a></li>
+						<li><a href="#grid">Grid Traversal Acceleration</a></li>
+					</ol>
+
+					<div>
+						<h3 id="primitives">Cone and Cylinder Primitives</h3>
+					
+						<a href="images/primitives.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 50%" src="images/primitives.png" alt="" /></a>
+
+						<p>Cones with circle at base are shown on the left and right. Cylinders with circles at both ends are shown on the top and bottom. A sphere is also shown in the centre.</p>
+					</div>
+
+					<div>
+						<h3 id="reflection">Reflection</h3>
+
+						<a href="images/final-scene.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 50%" src="images/reflection.png" alt="" /></a>
+
+						<p>A simple model is shown on top of a partially reflective surface.</p>
+					</div>
+
+					<div>
+						<h3 id="refraction">Refraction</h3>
+
+						<a href="images/refract-nofresnel.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 50%" src="images/refract-nofresnel.png" alt="" /></a>
+
+						<p>Refraction with glass sphere and cube (n=1.52).</p>
+					</div>
+
+					<div>
+						<h3 id="antialiasing">Anti-aliasing</h3>
+
+						<a href="images/simple.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 50%" src="images/simple.png" alt="" /></a>
+						<p>Path tracing with spp=1 (samples per pixel)</p>
+
+						<a href="images/simple8x8.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 50%" src="images/simple8x8.png" alt="" /></a>
+						<p>Path tracing with spp=64</p>
+					</div>
+
+					<div>
+						<h3 id="pathtracing">Path Tracing</h3>
+
+						<a href="images/refract-1x1.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 50%" src="images/refract-1x1.png" alt="" /></a>
+						<p>Path tracing with spp=1 (samples per pixel)</p>
+
+						<a href="images/refract-8x8.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 50%" src="images/refract-8x8.png" alt="" /></a>
+						<p>Path tracing with spp=64</p>
+					</div>
+
+					<div>
+						<h3 id="glossy">Glossy Reflection</h3>
+
+						<a href="images/glossy-reflection-1x1.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 50%" src="images/glossy-reflection-1x1.png" alt="" /></a>
+						<p>Glossy reflection with spp=1</p>
+
+						<a href="images/glossy-reflection-8x8.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 50%" src="images/glossy-reflection-8x8.png" alt="" /></a>
+						<p>Glossy reflection with spp=64</p>
+					</div>
+					
+					<div>
+						<h3 id="softshadows">Soft Shadows</h3>
+
+						<a href="images/soft-shadows-0.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 50%" src="images/soft-shadows-0.png" alt="" /></a>
+						<p>Soft shadows with light size = 0 (point light)</p>
+
+						<a href="images/soft-shadows-64.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 50%" src="images/soft-shadows-64.png" alt="" /></a>
+						<p>Soft shadows with light size = 64</p>
+					</div>
+
+					<div>
+						<h3 id="dof">Depth of Field</h3>
+
+						<div style="overflow: hidden; display: flex; justify-content:space-around">
+							<a href="images/dof-0.5-1" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 70%" src="images/dof-0.5-1.png" alt="" /></a>
+							<a href="images/dof-0.5-4" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 70%" src="images/dof-0.5-4.png" alt="" /></a>
+							<a href="images/dof-0.5-400" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 70%" src="images/dof-0.5-400.png" alt="" /></a>
+						</div>
+
+						<p>Depth of field with lens diameter = 0.5 and focal distances of 1, 4, and 400</p>
+					</div>
+
+					<div>
+						<h3 id="bump">Bump Mapping</h3>
+
+						<div style="overflow: hidden; display: flex; justify-content:space-around">
+							<a href="images/bump-2" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 40%" src="images/bump-2.png" alt="" /></a>
+							<a href="images/cube-bump-map" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 40%" src="images/cube-bump-map.png" alt="" /></a>
+						</div>
+
+						<p>Bump maps for sphere and cube</p>
+
+						<div style="overflow: hidden; display: flex; justify-content:space-around">
+							<a href="images/bump-diffuse-3.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 70%" src="images/bump-diffuse-3.png" alt="" /></a>
+							<a href="images/bump-diffuse-2.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 70%" src="images/bump-diffuse-2.png" alt="" /></a>
+							<a href="images/bump-diffuse-1.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 70%" src="images/bump-diffuse-1.png" alt="" /></a>
+						</div>
+
+						<p>Bump mapping with light source to the left, centred, and to the right</p>
+
+						<div style="overflow: hidden; display: flex; justify-content:space-around">
+							<a href="images/bump-diffuse-4.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 70%" src="images/bump-diffuse-5.png" alt="" /></a>
+							<a href="images/bump-diffuse-2.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 70%" src="images/bump-diffuse-2.png" alt="" /></a>
+							<a href="images/bump-diffuse-5.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="aspect-ratio: 1 / 1; width: 70%" src="images/bump-diffuse-5.png" alt="" /></a>
+						</div>
+
+						<p>Bump mapping with light source below, centred, and above</p>
+
+						<a href="images/bump-reflect.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="width: 50%" src="images/bump-reflect.png" alt="" /></a>
+						<p>Applying to reflective sphere rotated -120, 0 and 120 degrees respectively</p>
+						
+					</div>
+
+					<div>
+						<h3 id="grid">Grid Traversal Acceleration</h3>
+						
+						<a href="images/cubes.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="width: 50%" src="images/cubes.png" alt="" /></a>
+						<p>16x16x16 grid of cubes rotated on each axis proportional to their index in the cube</p>
+
+						<a href="images/graph.png" target="_blank" rel="noopener noreferrer" class="image featured"><img style="width: 50%" src="images/graph.png" alt="" /></a>
+
+					</div>
+				</article>
+			</div>
+
+			<footer id="copyright">
+				<li>&copy; Ryan Larkin</li><li>Page Theme: <a href="https://html5up.net/striped">@ajlkn - HTML5 UP</a></li>
+			</footer>
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
